@@ -12,13 +12,11 @@ jobs:
     permissions:
       contents: write
       pages: write
-      id-token: read
+      deployments: write  # 替代 id-token
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
       - name: Setup Node.js 20
         uses: actions/setup-node@v4
@@ -33,8 +31,7 @@ jobs:
         run: npm run docs:build
 
       - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v3  # 如果 v4 报错，可降级到 v3
         with:
           target-branch: blog_pages
           publish-dir: docs/.vitepress/dist
-          token: ${{ secrets.GITHUB_TOKEN }}
