@@ -9,35 +9,33 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     permissions:
-      contents: write
-      pages: write
-      id-token: write  # 仍需要 OIDC 权限
+      contents: write  # 仍需此权限
 
     steps:
       # 1. 检出代码
       - name: Checkout
         uses: actions/checkout@v4
 
-      # 2. 设置 Node.js 20 + 自动 npm 缓存
+      # 2. 设置 Node.js 环境
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-          cache: "npm"  # 自动缓存 node_modules
+          cache: "npm"
 
-      # 3. 安装依赖（npm 专用命令）
+      # 3. 安装依赖
       - name: Install dependencies
-        run: npm ci  # 严格按 lockfile 安装
+        run: npm ci
 
       # 4. 构建项目
       - name: Build
         run: npm run docs:build
 
-      # 5. 部署（显式使用 ACCESS_TOKEN）
-      - name: Deploy
-        uses: actions/deploy-pages@v4
-        env:
-          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}  # 强制使用你的 ACCESS_TOKEN
+      # 5. 使用 peaceiris/actions-gh-pages 部署（保留 ACCESS_TOKEN）
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          target-branch: blog-pages
-          publish-dir: docs/.vuepress/dist
+          github_token: ${{ secrets.ACCESS_TOKEN }}  # 使用你的个人访问令牌
+          publish_branch: blog-pages
+          publish_dir: docs/.vuepress/dist
+          force_orphan: true  # 保持发布分支干净
