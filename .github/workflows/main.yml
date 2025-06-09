@@ -10,15 +10,12 @@ jobs:
     runs-on: ubuntu-latest
     
     permissions:
-      contents: write
-      pages: write
-      id-token: read
+      pages: write  # 必须
+      id-token: write  # 必须（用于 OIDC 身份验证）
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
       - name: Setup Node.js 20
         uses: actions/setup-node@v4
@@ -32,9 +29,10 @@ jobs:
       - name: Build VitePress
         run: npm run docs:build
 
-      - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v4
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
         with:
-          target-branch: blog_pages
-          publish-dir: docs/.vitepress/dist
-          token: ${{ secrets.GITHUB_TOKEN }}
+          path: docs/.vitepress/dist  # VitePress 生成的静态文件目录
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4  # 官方推荐方式
