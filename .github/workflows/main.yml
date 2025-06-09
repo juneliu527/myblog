@@ -30,7 +30,7 @@ jobs:
         run: npm run docs:build
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v2
         with:
           path: docs/.vitepress/dist  # VitePress 生成的静态文件目录
 
