@@ -10,8 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     
     permissions:
-      pages: write  # 必须
-      id-token: write  # 必须（用于 OIDC 身份验证）
+      pages: write
+      id-token: write
+      contents: read  # 新增此项确保基础权限
 
     steps:
       - name: Checkout
@@ -29,10 +30,11 @@ jobs:
       - name: Build VitePress
         run: npm run docs:build
 
-      - name: Upload artifact
+      # 关键修改点：必须使用专用上传action
+      - name: Upload Pages Artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          path: docs/.vitepress/dist  # VitePress 生成的静态文件目录
+          path: docs/.vitepress/dist
 
       - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v4  # 官方推荐方式
+        uses: actions/deploy-pages@v4
