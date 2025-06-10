@@ -61,7 +61,8 @@ export default defineConfig({
 
   },
   vite: {
-    base: '', // 关键配置：强制使用相对路径
+    base: '/myblog/', // 关键配置：强制使用相对路径
+    publicDir: '../public',
     build: {
       rollupOptions: {
         output: {
