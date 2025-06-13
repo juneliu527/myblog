@@ -2,7 +2,7 @@
 layout: doc
 ---
 ## 新建项目
-![](https://cdn.nlark.com/yuque/0/2025/png/22404493/1748399591385-f3a97100-b3ed-4d69-8124-dfb1e622fd5d.png)
+![](/pr基础/新建项目.png)
 
 + 暂存盘要设置成“与项目相同”
 

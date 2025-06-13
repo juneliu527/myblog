@@ -1,8 +1,10 @@
 import { defineConfig } from 'vitepress'
 
+const isDev = process.env.NODE_ENV == 'development'
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: "/myblog/",
+  base: isDev? '/':  "/myblog/",
   title: "温束的笔记",
   description: "温束的笔记",
   themeConfig: {
@@ -55,13 +57,13 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: { svg: '<svg viewBox="0 0 24 24"><image href="/kook.ico" width="24" height="24" /></svg>' }, link: 'https://kook.vip/Qt8rZx' }
+      { icon: { svg: '<svg viewBox="0 0 24 24"><image href="/myblog/kook.ico" width="24" height="24" /></svg>' }, link: 'https://kook.vip/Qt8rZx' }
     ],
 
 
   },
   vite: {
-    base: '/myblog/', // 关键配置：强制使用相对路径
+    base: isDev?'/': '/myblog/', // 关键配置：强制使用相对路径
     publicDir: '../public',
     build: {
       rollupOptions: {
