@@ -16,7 +16,7 @@ hero:
   actions:
     - theme: brand
       text: 原文地址
-      link: https://www.yuque.com/junee-lzcyv/olpm8a
+      link: https://www.yuque.com/g/junee-lzcyv/olpm8a/collaborator/join?token=WHcv5tC10egeNAGT&source=book_collaborator# 《剪辑》
     - theme: alt
       text: 绝对好用的办法
       link: https://www.baidu.com/
@@ -29,6 +29,7 @@ features:
     link: /短片剪辑/流程一：项目结构
   - title: DaVinci
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    link: /达芬奇/达芬奇基础
   - title: 长篇剪辑
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
     link: /pr和短片剪辑/index

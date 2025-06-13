@@ -7,6 +7,7 @@ export default defineConfig({
   base: isDev? '/':  "/myblog/", //判断是开发环境开始正式环境
   title: "温束的笔记",
   description: "温束的笔记",
+  lastUpdated: true, // 最后更新于，是最后提交git的时间
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     search: {
@@ -52,6 +53,15 @@ export default defineConfig({
               { text: '调度戏多机位--北京夜', link: '/短片剪辑/实操/调度戏多机位--北京夜' },
             ]
           },
+        ]
+      },
+      {
+        text: '达芬奇',
+        collapsed: true,
+        items: [
+          {
+            text: '达芬奇基础', link: '/达芬奇/达芬奇基础'
+          }
         ]
       },
     ],
