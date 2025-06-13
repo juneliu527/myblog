@@ -6,7 +6,7 @@ layout: doc
 
 + 暂存盘要设置成“与项目相同”
 
-![](https://cdn.nlark.com/yuque/0/2025/png/22404493/1747712670926-e8798d99-e47c-4ce5-85a2-0b433eb4fa9d.png)
+![](/pr基础/暂存盘.png)
 
 + 设置音频输出
 
@@ -31,22 +31,22 @@ layout: doc
 + <font style="background-color:#FBDE28;">option+X</font>：删全部
 + <font style="background-color:#FBDE28;">shift+i/shift+o</font>：快速转到入点/出点
 + <font style="background-color:#FBDE28;">鼠标滚轮+option</font>：缩放轨道
-+ <font style="background-color:#FBDE28;">鼠标滚轮+shift</font>：移动轨道显示![](https://cdn.nlark.com/yuque/0/2025/png/22404493/1747795505094-f435ae9b-dda3-428b-9062-70d88ac5ff77.png)
++ <font style="background-color:#FBDE28;">鼠标滚轮+shift</font>：移动轨道显示![](/pr基础/移动轨道显示.png)
 + <font style="background-color:#FBDE28;">command+加减号</font>：增加视频轨道的上下行间距 
 
-![](https://cdn.nlark.com/yuque/0/2025/gif/22404493/1747797092829-dfa79381-e557-4e0d-928c-85d534069d2f.gif)
+![](/pr基础/增加视频上下间距.gif)
 
 + <font style="background-color:#FBDE28;">option+加减号</font>：增加音频轨道的上下行间距
 
-![](https://cdn.nlark.com/yuque/0/2025/gif/22404493/1747797141414-7a0b18aa-19bf-4f36-b974-f811e0f0dc51.gif)
+![](/pr基础/增加音频上下间距.gif)
 
 + <font style="background-color:#FBDE28;">shift+加减号</font>：增加视频+音频轨道上下行间间距
 + <font style="background-color:#FBDE28;">，</font>：插入
 + <font style="background-color:#FBDE28;">。</font>：覆盖
 + <font style="background-color:#FBDE28;">shift+右边delete</font>：删除并且自动与前面素材对齐
-+ <font style="background-color:#FBDE28;">直接拖动源画面到剪辑预览画面可以插入</font>：![](https://cdn.nlark.com/yuque/0/2025/gif/22404493/1747796916878-77deb933-bcf7-4c0f-82a9-2b89a3876496.gif)
++ <font style="background-color:#FBDE28;">直接拖动源画面到剪辑预览画面可以插入</font>：![](/pr基础/插入.gif)
 + 单个素材启动或者停用：
-    - 对素材右键->启动![](https://cdn.nlark.com/yuque/0/2025/png/22404493/1747798195269-228da8aa-a52e-4f80-805f-361e6a2d7bb1.png)
+    - 对素材右键->启动![](/pr基础/启用.png)
     - <font style="background-color:#FBDE28;">shift+command+e</font>
 + <font style="background-color:#FBDE28;">command+L</font>：绑定和解绑音频与视频
     - 一个视频可以绑定多个音频
@@ -55,14 +55,14 @@ layout: doc
 + <font style="background-color:#FBDE28;">command+拖动</font>：插入 `command+拖动 === ，` 
 + <font style="background-color:#FBDE28;">shift+拖动</font>：上下拖动
 + <font style="background-color:#FBDE28;">option+拖拽</font>：复制一份选中的素材到光标拖拽的终点
-+ <font style="background-color:#FBDE28;">shitf+command+v</font>：插入式粘贴![](https://cdn.nlark.com/yuque/0/2025/gif/22404493/1747800097769-390db1a2-3e2a-45e2-a860-061bff6a2283.gif)
++ <font style="background-color:#FBDE28;">shitf+command+v</font>：插入式粘贴![](/pr基础/插入式粘贴.gif)
 
 ## 配合入出点的剪切
-![画板](https://cdn.nlark.com/yuque/0/2025/jpeg/22404493/1747809439606-daee8abb-fc35-4a81-9913-35e68d46a660.jpeg)
+![画板](/pr基础/画板.jpeg)
 
 ## 精确移动
 + <font style="background-color:#FBDE28;">command+</font><font style="background-color:#FBDE28;">↔</font>：左右移动一帧
-    - ![](https://cdn.nlark.com/yuque/0/2025/gif/22404493/1747810275459-a2ab288d-b1ad-4453-b5be-f8d7dd388d4e.gif)
+    - ![](/pr基础/精确移动.gif)
 + <font style="background-color:#FBDE28;">option+</font><font style="background-color:#FBDE28;">↕</font>：上下移动一个轨道
 
 ## 轨道切割  多机位剪辑用的多
@@ -77,23 +77,23 @@ layout: doc
 + <font style="background-color:#FBDE28;">选中整个素材+command+d</font>：整个素材过渡
 
 ##  一键删除所有间隙
-![](https://cdn.nlark.com/yuque/0/2025/png/22404493/1747815780191-ef691f62-bfda-4c40-bf32-367b81a54db9.png)
+![](/pr基础/删除所有间隙.png)
 
 ## 变速
 + <font style="background-color:#FBDE28;">command+R</font>：变速
-+ 比率拉伸工具实现变速：![](https://cdn.nlark.com/yuque/0/2025/png/22404493/1747882526139-f7352eae-0971-4e2e-9a29-12c60d79950f.png)
++ 比率拉伸工具实现变速：![](/pr基础/比率拉伸变速.png)
 + 关键帧变速：
 
 [bilibili](https://player.bilibili.com/player.html?bvid=BV15T421Y7mf&autoplay=0)
 
 ## 打码
 ## 打水印
-![](https://cdn.nlark.com/yuque/0/2025/png/22404493/1747885083833-2f316470-0723-4b9b-aa0c-6ef1e2bdd645.png)
+![](/pr基础/打水印.png)
 
 ## 变形稳定器
 常用参数：
 
-![](https://cdn.nlark.com/yuque/0/2025/png/22404493/1747892451618-6e800d30-59d5-4a52-8f61-a69e6d1d8027.png)
+![](/pr基础/稳定变形器.png)
 
 **变形稳定器不能和变速处于同一轨道，需要嵌套**
 
@@ -109,10 +109,10 @@ layout: doc
 ### 嵌套
 pr有时候加特效多了，比如变速和模糊在一起会冲突，可以用嵌套的方式，即把一个做好某一特效的序列导入到一个新的序列。所以特效一般给AE做
 
-![](https://cdn.nlark.com/yuque/0/2025/png/22404493/1747886193982-b1015ec1-38a8-4fdd-8305-3fd1d67885d8.png)
+![](/pr基础/嵌套.png)
 
 ## 如果有素材和其他素材不一样大小
-![](https://cdn.nlark.com/yuque/0/2025/png/22404493/1748487445929-e4036e44-0fa4-4348-9b7d-c727c07c4364.png)
+![](/pr基础/设置帧大小.png)
 
 ## 画中画
 ### 残影效果

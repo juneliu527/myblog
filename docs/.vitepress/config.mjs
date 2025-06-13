@@ -4,7 +4,7 @@ const isDev = process.env.NODE_ENV == 'development'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: isDev? '/':  "/myblog/",
+  base: isDev? '/':  "/myblog/", //判断是开发环境开始正式环境
   title: "温束的笔记",
   description: "温束的笔记",
   themeConfig: {
